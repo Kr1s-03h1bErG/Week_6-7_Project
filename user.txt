@@ -1,1 +1,12 @@
-
+Need
+    Function that logs user into user db / logs them in 
+    Function that pulls the games they can edit from the db
+    Function that creates the game dict / data in into
+    Function that allows them to delete game data
+    Function that allows them to change game data 
+    Function that allows them to see game data in fancy text 
+    Function that allows them to add a game to their creates
+    Function that 
+    dict that holds all games / user
+    dict {user: dict, games: games}
+     
