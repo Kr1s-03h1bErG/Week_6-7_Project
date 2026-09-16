@@ -9,11 +9,12 @@ def system()
 
 #login BULLSHITTTTTTTTT
 def login(username)
+#saves the username? do we want a super super basic passwordsystemlike a dictionary or something
 
 #check own games
-def your_games(username)
+def your_games(username) #username returned for session? needed to be able to look at your own game sbecaus eof hte username connection to creator
+#(this would be a LOT of checking if this thing in this dictionary is equal to that thing in that dictionary euuuuuughhhhhhhhh)
 
-#games?
 
 #crud functions woah
 #we don't need more information for delete update and view right? it can just get information from the dictionary
