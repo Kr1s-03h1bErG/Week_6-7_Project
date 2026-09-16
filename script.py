@@ -1,6 +1,6 @@
 #dictionary
 #usernames as values orkeys?
-
+#its beautiful im a genius
 games = {
     #hear me out; 'examplegame' : {'creator' : 'exampleuser', 'description' : 'words', 'buycount' : number, 'price' : number} I JUST MAE SOME BULLLSHITTTTTT
 }
