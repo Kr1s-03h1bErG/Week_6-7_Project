@@ -33,5 +33,6 @@ def delete_game(game_name, username)
 
 def update_game(game_name, username)
 
+
 def view_game(game_name, username) #username to enable/disable delete and update? #will delete and update be accessible on their own or only through view
 
