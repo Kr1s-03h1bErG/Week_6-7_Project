@@ -7,7 +7,7 @@ games = {
 }
 #master function ooopooioioooooioiuuoi
 def system()
-    print("Welcome to Steam Acess")
+    print("Welcome to Steam Access")
     while True:
         login_stats = login()
         if login_stats[0]: #untill you login successfully
@@ -17,10 +17,7 @@ def system()
     player_data = get_player_data(login_stats[1], login_stats[2])
     print(player_data)
     
-
-#login BULLSHITTTTTTTTT
-def login(username)
-#saves the username? do we want a super super basic passwordsystemlike a dictionary or something
+    
 
 #check own games
 def your_games(username) #username returned for session? needed to be able to look at your own game sbecaus eof hte username connection to creator
