@@ -18,7 +18,7 @@ def login():
             print("Failed to find name in db/user didn't need to")
             return False , ""
 #Returns suceeded or failed (bool) and player name
-def add_user(username, password):
+def add_user(username):
     with open("user.txt", "a") as file:
         file.write(f"\n{username},{password}::")
         return True
