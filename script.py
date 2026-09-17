@@ -14,16 +14,13 @@ def system()
             break
         else: 
             register()
+    #prints username + games owned
     player_data = get_player_data(login_stats[1], login_stats[2])
     print(player_data)
     
     
 
-#check own games
-def your_games(username) #username returned for session? needed to be able to look at your own game sbecaus eof hte username connection to creator
-#(this would be a LOT of checking if this thing in this dictionary is equal to that thing in that dictionary euuuuuughhhhhhhhh)
-    #for yourusername in game[username]:
-        #print(game + information with formatting?)
+
 
 
 #crud functions woah
