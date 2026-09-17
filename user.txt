@@ -1,3 +1,4 @@
+also 9BBB21D5422A18C88D06D2B7B992D67C is our key
 Need
     Function that logs user into user db / logs them in 
     Function that pulls the games they can edit from the db
