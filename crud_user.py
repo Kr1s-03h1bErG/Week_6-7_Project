@@ -1,23 +1,22 @@
 # checks if user is in db returns Bool
-def is_user_in_user(username, password):
-    user_data = username + "," + password
+def is_user_in_user(username):
+    user_data = username + ":"
     with open("user.txt", "r") as file:
         for line_number, line in enumerate(file, 1): # starts numbering at 1
             if user_data in line:
                 return True
         return False
-# def pull_user_data()
+
 #checks Returns if it succeeded or failed (bool)
 def login():
     while True:
         need_login = get_response("Do you need to login? Y/N: ")
         if need_login:
             username = get_response("What is your Username?: ")
-            password = get_response("What is your Password?: ")
-            return is_user_in_user(username, password) , username , password
+            return is_user_in_user(username, password) , username
         else: # return that it failed to login so we can register later
             print("Failed to find name in db/user didn't need to")
-            return False , "", ""
+            return False , ""
 #Returns suceeded or failed (bool) and player name
 def add_user(username, password):
     with open("user.txt", "a") as file:

@@ -7,6 +7,15 @@ games = {
 }
 #master function ooopooioioooooioiuuoi
 def system()
+    print("Welcome to Steam Acess")
+    while True:
+        login_stats = login()
+        if login_stats[0]: #untill you login successfully
+            break
+        else: 
+            register()
+    player_data = get_player_data(login_stats[1], login_stats[2])
+    print(player_data)
     
 
 #login BULLSHITTTTTTTTT
