@@ -2,9 +2,9 @@ from crud_user import get_response, get_player_data, is_user_in_user, login, reg
 #dictionary
 #usernames as values orkeys?
 #its beautiful im a genius
-games = {
-    #hear me out; 'examplegame' : {'creator' : 'exampleuser', 'description' : 'words', 'buycount' : number, 'price' : number} I JUST MAE SOME BULLLSHITTTTTT
-}
+# games = {
+#     #hear me out; 'examplegame' : {'creator' : 'exampleuser', 'description' : 'words', 'buycount' : number, 'price' : number} I JUST MAE SOME BULLLSHITTTTTT
+# }
 #master function ooopooioioooooioiuuoi
 def system()
     print("Welcome to Steam Access")

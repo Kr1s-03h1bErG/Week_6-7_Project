@@ -1,1 +1,13 @@
-gamename : genre, word : dev, actualdev : price, free/paid
+gamename : genre, word : dev, actualdev : price, float
+Genshin Impact : genre, gacha rpg : dev, Hoyoverse : price, 0
+Wuthering Waves : genre, gacha rpg : dev, Kuro Games : price, 0
+Honkai Star Rail : genre, gacha rpg : dev, Hoyoverse : price, 0
+Zenless Zone Zero : genre, gacha rpg : dev, Hoyoverse : price, 0
+Reverse 1999 : genre, gacha rpg : dev, Bluepoch : price, 0
+Celeste : genre, platformer : dev, Maddy Makes Games : price, 20
+Animal Crossing : genre, cozy game : dev, Nintendo : price, 42 
+Stardew Valley : genre, farming simulator : dev, Concerned Ape : price, 15
+
+
+pls help me i genuinely live under a fucking rock i only play mobile games
+make genre a list??
