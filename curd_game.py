@@ -7,7 +7,7 @@ def read_game(original_game_name):
     game_name = original_game_name + ":"
     with open("game.txt", "r") as file:
         for line_number, line in enumerate(file, 1): # starts numbering at 1
-            line = line.strip() #this also removes \n whitch is helpfull
+            line = line.strip() #this also removes \n which is helpful
             game_data = {"game": original_game_name} # initialize player_game_data
             if game_name in line:
                 player_data = line.split(":") # seperate user and password from game data

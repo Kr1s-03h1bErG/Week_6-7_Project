@@ -22,7 +22,7 @@ def add_user(username):
     with open("user.txt", "a") as file:
         file.write(f"\n{username}:")
         return True
-# this returns if it registered sucessfuly as a
+# this returns if it registered sucessfully as a
 def register():
     need_register = get_response("Do you need to register? Y/N: ")
     while True:
