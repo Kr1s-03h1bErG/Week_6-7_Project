@@ -1,22 +1,18 @@
 gamename : genre, word : dev, actualdev : price, float
-Wuthering Waves : genre, gacha rpg : dev, Kuro Games : price, 0
-Zenless Zone Zero : genre, gacha rpg : dev, Hoyoverse : price, 0
-Reverse 1999 : genre, gacha rpg : dev, Bluepoch : price, 0
-Cookie Run Kingdom : genre, gacha rpg : dev, Devsisters : price, 0
-Lego Rock Band : genre, rhythm : dev, Harmonix : price, 15
-Persona 5 : genre, jrpg : dev, ATLUS : price, 60
-Bear and Breakfast : genre, adventure : dev, Gummy Cat : price, 20 
-Horse Magnifier : genre, puzzle : dev, sketbordcat : price, 3
-House Flipper : genre, simulation : dev, Empyrean : price, 25
-Unpacking : genre, 
-Postal 2 : genre, first-person shooter : dev, Running With Scissors : price, 10
-Celeste : genre, action/adventure : dev, Maddy Makes Games : price, 20
-Stardew Valley : genre, farming simulator : dev, Concerned Ape : price, 15
-GTA5 : genre, action/adventure : dev, Rockstar Games : price, 20
-Marvel Rivals : genre, third-person shooter : dev, Netease : price, 0
-The Sims : genre, 
-Catherine : genre, puzzle game : dev, ATLUS : price, 20
+Wuthering Waves:genre,gacha rpg:dev,Kuro Games:price,0\
+Zenless Zone Zero:genre,gacha rpg:dev,Hoyoverse:price,0
+Reverse 1999:genre,gacha rpg:dev,Bluepoch:price,0
+Cookie Run Kingdom:genre,gacha rpg:dev,Devsisters:price,0
+Lego Rock Band:genre,rhythm:dev,Harmonix:price,15
+Persona 5:genre,jrpg:dev,ATLUS:price,60
+Bear and Breakfast:genre,adventure:dev,Gummy Cat:price,20
+Horse Magnifier:genre,puzzle:dev,sketbordcat:price,3
+House Flipper:genre,simulation:dev,Empyrean:price,25
+Postal 2:genre,first-person shooter:dev,Running With Scissors:price,10
+Celeste:genre,action/adventure:dev,Maddy Makes Games:price,20
+Stardew Valley:genre,farming simulator:dev,Concerned Ape:price,15
+GTA5:genre,action/adventure:dev,Rockstar Games:price,20
+Marvel Rivals:genre,third-person shooter:dev,Netease:price,0
+Catherine:genre,puzzle game:dev,ATLUS:price,20
 
-pls help me i genuinely live under a fucking rock i only play mobile games
-make genre a list??
-is minecraft on steam cuz google says its not
+Project Zomboid:genre,Isometric Survival:dev,The Indie Stone:price,25
