@@ -13,7 +13,7 @@ def system():
         else: 
             register()
     #prints username + games owned
-    print(Panel([darkblue]login_stats))
+    print(Panel(login_stats))
     player_data = get_player_data(login_stats[1])
     print(player_data)
     #crud uses wow
