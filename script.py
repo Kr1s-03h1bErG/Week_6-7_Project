@@ -20,11 +20,6 @@ def system():
     player_data = get_player_data(login_stats[1])
     print(player_data)
     
-    
-
-
-
-
 #crud functions woah
 #we don't need more information for delete update and view right? it can just get information from the dictionary
 def post_game(username): #does username need to be an argument here or will it automatically take it from the login thing or smth
