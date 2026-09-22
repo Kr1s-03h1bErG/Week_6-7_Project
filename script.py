@@ -11,7 +11,7 @@ def system():
     print("Welcome to Steam Access")
     while True:
         login_stats = login()
-        if login_stats[0]: #untill you login successfully
+        if login_stats[0]: #until you login successfully
             break
         else: 
             register()
@@ -21,8 +21,7 @@ def system():
     print(player_data)
     
 #crud functions woah
-#we don't need more information for delete update and view right? it can just get information from the dictionary
-def post_game(username): #does username need to be an argument here or will it automatically take it from the login thing or smth
+def post_game(username): 
     game = input("What is the game name?: ").capitalize()
     genre = input("What is the game genre?: ").capitalize()
     price = get_response("What is the games price?: ")
@@ -34,7 +33,7 @@ def post_game(username): #does username need to be an argument here or will it a
 # def update_game(game_name, username):
     
 
-def view_game(game_name): #username to enable/disable delete and update? #will delete and update be accessible on their own or only through view
+def view_game(game_name): #username to enable/disable delete and update
     game_data = read_game(game_name)
     print(game_data)
 # system()
