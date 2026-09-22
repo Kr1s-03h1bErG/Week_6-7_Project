@@ -1,5 +1,5 @@
 gamename : genre, word : dev, actualdev : price, float
-Wuthering Waves:genre,gacha rpg:dev,Kuro Games:price,0\
+Wuthering Waves:genre,gacha rpg:dev,Kuro Games:price,0
 Zenless Zone Zero:genre,gacha rpg:dev,Hoyoverse:price,0
 Reverse 1999:genre,gacha rpg:dev,Bluepoch:price,0
 Cookie Run Kingdom:genre,gacha rpg:dev,Devsisters:price,0
@@ -14,3 +14,4 @@ Stardew Valley:genre,farming simulator:dev,Concerned Ape:price,15
 GTA5:genre,action/adventure:dev,Rockstar Games:price,20
 Marvel Rivals:genre,third-person shooter:dev,Netease:price,0
 Catherine:genre,puzzle game:dev,ATLUS:price,20
+Project Zomboid:genre,Isometric Survival:dev,The Indie Stone:price,25

@@ -38,15 +38,23 @@ def post_game(username):
     genre = input("What is the game genre?: ").capitalize()
     price = get_response("What is the games price?: ")
     add_game(game, genre, username, price)
+    print(f"made {game}!")
+    
 
-# def delete_game(game_name, username):
+def delete_game(username):
+    game = input("What is the game name?: ").capitalize()
+    del_game(game, login_stats[1])
+    print(f"Deleted {game}!")
 
-def update_game(game_name, username):
-    pass
+def update_game(username):
+    game = get_response("What is the games name you wish to edit?: ")
+    print("Parts of a game are: game, dev, price, and genre")
+    key = get_response("What is the part of the game data you wish to edit?: ")
+    data = get_response("What is the new game data?: ")
+    upd_game(game, username, key, data)
     
 def view_game(game_name): #username to enable/disable delete and update
     game_data = read_game(game_name)
     # print(game_data) # this is just the games data idk what else to say about it 
     print(f"{game_data["game"]} is a {game_data["genre"]} game that is made by {game_data["dev"]} and costs {game_data["price"]}$")
-# system()
-view_game("Project Zomboid")
+system()

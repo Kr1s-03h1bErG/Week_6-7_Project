@@ -46,12 +46,12 @@ def get_player_data(game_name):
             if user_data in line:
                 player_data = line.split(":") # seperate user and password from game data
                 player_data.pop(0)
-                if len(player_data[0]) == 0: # if no games in player data
-                    game_data["games"] = []
+                print(player_data)
+                game_data["games"] = []
+                if len(player_data) == 0: # if no games in player data
                     return game_data
                 for game in player_data:
-                    gd = game.split(",") # split game_id from position
-                    game_data[gd[0]] = gd[1]
+                    game_data["games"].append({"game": game})
                     # ^ just adds a dict of game_id and position in to games list in dict 
                 return game_data
 
