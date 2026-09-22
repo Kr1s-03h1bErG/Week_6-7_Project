@@ -10,7 +10,7 @@ console = Console() #DO NOT DELETE ME
 
 #master function ooopooioioooooioiuuoi
 def system():
-    print("Welcome to Steam Access")
+    console.print("Welcome to Steam Access", style = 'bold')
     while True:
         login_stats = login()
         if login_stats[0]: #until you login successfully
