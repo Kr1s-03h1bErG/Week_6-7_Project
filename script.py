@@ -1,7 +1,12 @@
 from crud_user import get_response, get_player_data, is_user_in_user, login, register
 from curd_game import add_game, read_game
-from rich import print as rprint, pretty
-from rich.panel import Panel
+from rich import pretty, print as rprint, console, style, panel
+from rich.pretty import pprint
+from rich.style import Style
+from rich.console import Console
+console = Console() #DO NOT DELETE ME
+#yes that's reallynecessary
+
 
 #master function ooopooioioooooioiuuoi
 def system():
