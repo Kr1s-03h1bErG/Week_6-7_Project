@@ -35,6 +35,7 @@ def post_game(username):
 
 def view_game(game_name): #username to enable/disable delete and update
     game_data = read_game(game_name)
-    print(game_data)
+    # print(game_data) # this is just the games data idk what else to say about it 
+    print(f"{game_data["game"]} is a {game_data["genre"]} game that is made by {game_data["dev"]} and costs {game_data["price"]}$")
 # system()
-post_game("kris")
+view_game("Project Zomboid")

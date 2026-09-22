@@ -14,3 +14,5 @@ Stardew Valley:genre,farming simulator:dev,Concerned Ape:price,15
 GTA5:genre,action/adventure:dev,Rockstar Games:price,20
 Marvel Rivals:genre,third-person shooter:dev,Netease:price,0
 Catherine:genre,puzzle game:dev,ATLUS:price,20
+
+Project Zomboid:genre,Isometric Survival:dev,The Indie Stone:price,25

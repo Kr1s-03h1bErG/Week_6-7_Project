@@ -18,6 +18,15 @@ def read_game(original_game_name):
                     # ^ just adds a dict of game_id and position in to games list in dict 
                 return game_data
 
-# def delete_game(game_name, username):
-print(read_game("Project Zomboid"))
+def delete_game(game_name, username):
+    if read_game(game_name)["dev"] == username:
+        user_data = username + ":"
+        with open("game.txt", "r") as file:
+            lines = file.readlines()
+        with open("game.txt", "w") as file:
+            for line in lines:
+                if user_data not in line:
+                    file.write(line)
+delete_game("Project Zomboid", "The Indie Stone")
+# print(read_game("Project Zomboid"))
 # add_game("Project Zomboid", "Isometric Survival", "The Indie Stone", 25)
