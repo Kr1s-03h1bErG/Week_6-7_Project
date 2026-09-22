@@ -1,5 +1,5 @@
 from crud_user import get_response, get_player_data, is_user_in_user, login, register
-from curd_game import add_game, read_game
+from curd_game import add_game, read_game, del_game , upd_game , add_game_to_user
 from rich import pretty, print as rprint, console, style, panel
 from rich.pretty import pprint
 from rich.style import Style
@@ -18,11 +18,11 @@ def system():
         else: 
             register()
     #prints username + games owned
-    print(Panel(login_stats))
+    print((login_stats))
     player_data = get_player_data(login_stats[1])
     print(player_data)
     #crud uses wow
-    choice = input('Would you like to: \n1) Delete one of your own games\n2) Post a new game\n3) Update the information for one of your games\n4) View available games\n')
+    choice = get_response('Would you like to: \n1) Delete one of your own games\n2) Post a new game\n3) Update the information for one of your games\n4) View available games\n')
     #delete
     if choice == 1:
         delete_game(login_stats[1])
