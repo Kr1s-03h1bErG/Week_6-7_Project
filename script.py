@@ -1,16 +1,22 @@
 from crud_user import get_response, get_player_data, is_user_in_user, login, register
+<<<<<<< HEAD
 from curd_game import add_game, read_game, del_game , upd_game , add_game_to_user
 from rich import pretty, print as rprint, console, style, panel
+=======
+from curd_game import add_game, read_game
+from rich import pretty, print as rprint, console, style, panel, padding
+>>>>>>> 1d7ffb2 (CUZ IM A GRINDERRR OH OH OH OH OHHHHHO)
 from rich.pretty import pprint
 from rich.style import Style
 from rich.console import Console
+from rich.padding import Padding
 console = Console() #DO NOT DELETE ME
 #yes that's reallynecessary
 
 
 #master function ooopooioioooooioiuuoi
 def system():
-    console.print("Welcome to Steam Access", style = 'bold')
+    console.print(Padding("Welcome to Steam Access", (1, 1), style = 'bold on blue', expand=False))
     while True:
         login_stats = login()
         if login_stats[0]: #until you login successfully
