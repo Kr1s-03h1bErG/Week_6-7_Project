@@ -11,8 +11,5 @@ Need
     dict that holds all games / user
     dict {user: dict, games: games}
 
-    -could we use layout() in rich to separate the user data/other games available? like a browse tab where u can just scroll through stuff or something
-        -how much of this belongs in a website thing like last year
-    -layout could be SO USEFUL but the print statements would be a pain in the ass (what prints normally vs what's rprint)
-     
+  
 miranda:game, game2

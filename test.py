@@ -26,13 +26,15 @@ layout.split_column(
 #     Layout(name="left"),
 #     Layout(name="right"),
 # )
-layout["lower"].size = (10, 10)
+layout["lower"].size = 4
 # layout["lower"].ratio = 0.2
 
 layout['upper'].size = 4
 layout["upper"].update(
     Layout(Panel.fit("[red]my documentation sucks![/red]")),
-
+)
+layout['lower'].update(
+    Layout(Panel.fit("[blue]it totally does[/blue]"))
 )
 # layout['lower'].visible=False
 # layout["right"].split(
