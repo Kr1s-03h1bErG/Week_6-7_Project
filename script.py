@@ -1,11 +1,6 @@
 from crud_user import get_response, get_player_data, is_user_in_user, login, register
-<<<<<<< HEAD
 from curd_game import add_game, read_game, del_game , upd_game , add_game_to_user
-from rich import pretty, print as rprint, console, style, panel
-=======
-from curd_game import add_game, read_game
 from rich import pretty, print as rprint, console, style, panel, padding
->>>>>>> 1d7ffb2 (CUZ IM A GRINDERRR OH OH OH OH OHHHHHO)
 from rich.pretty import pprint
 from rich.style import Style
 from rich.console import Console
