@@ -8,7 +8,7 @@ from rich.padding import Padding
 console = Console() #DO NOT DELETE ME
 #yes that's reallynecessary
 
-
+#USE RICH LAYOUT TO SEPARATE BUTTONS/CHOICES????
 #master function ooopooioioooooioiuuoi
 def system():
     console.print(Padding("Welcome to Steam Access", (1, 1), style = 'bold on blue', expand=False))
