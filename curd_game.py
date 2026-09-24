@@ -100,7 +100,7 @@ def find_all_games():
                 if n.lower() == "n":
                     return None
             if game_data[0] != '':
-                print(f"{line_number}: {game_data[0]}")
+                print(f"    {line_number}: {game_data[0]}")
 # del_game("Project Zomboid", "The Indie Stone")
 # print(read_game("Project Zomboid"))
 # print(add_game("Project Zomboid", "Isometric Survival", "kris", 25))
