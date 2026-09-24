@@ -90,6 +90,17 @@ def upd_game(game_name, username, change, change_data):
     else:
         print("Game was not found!")
 
+def find_all_games():
+    with open("game.txt", "r") as file:
+        for line_number, line in enumerate(file, 1): # starts numbering at 1
+            line = line.strip() #this also removes \n which is helpful
+            game_data = line.split(":") # seperate user and password from game data
+            if line_number % 5 == 0:
+                n = input("enter to continue or n to stop browsing")
+                if n.lower() == "n":
+                    return None
+            if game_data[0] != '':
+                print(f"{line_number}: {game_data[0]}")
 # del_game("Project Zomboid", "The Indie Stone")
 # print(read_game("Project Zomboid"))
 # print(add_game("Project Zomboid", "Isometric Survival", "kris", 25))

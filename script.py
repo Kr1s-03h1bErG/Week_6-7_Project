@@ -1,5 +1,5 @@
 from crud_user import get_response, get_player_data, is_user_in_user, login, register
-from curd_game import add_game, read_game, del_game , upd_game , add_game_to_user
+from curd_game import add_game, read_game, del_game , upd_game , add_game_to_user, find_all_games
 from rich import pretty, print as rprint, console, style, panel, padding
 from rich.pretty import pprint
 from rich.style import Style
@@ -22,7 +22,7 @@ def system():
     while True:
         player_data = get_player_data(login_stats[1])
         #crud uses wow
-        choice = get_response('Would you like to: \n[blue]1) Delete one of your own games[/blue]\n[green]2) Post a new game[/green]\n3) Update the information for one of your games\n4) View available games\n')
+        choice = get_response('Would you like to: \n[blue]1) Delete one of your own games[/blue]\n[green]2) Post a new game[/green]\n3) Update the information for one of your games\n4) View available games\n5) Browse Games\n')
         #delete
         if choice == 1:
             delete_game(login_stats[1])
@@ -70,6 +70,6 @@ def view_game(game_name): #username to enable/disable delete and update
         print(f"{game_data["game"]} is a {game_data["genre"]} game that is made by {game_data["dev"]} and costs {game_data["price"]}$")
 #mabye add something to buy games?
 def browse():
-    pass
+    find_all_games()
 system()
 
