@@ -46,7 +46,6 @@ def get_player_data(game_name):
             if user_data in line:
                 player_data = line.split(":") # seperate user and password from game data
                 player_data.pop(0)
-                print(player_data)
                 game_data["games"] = []
                 if len(player_data) == 0: # if no games in player data
                     return game_data

@@ -5,7 +5,7 @@ from rich.pretty import pprint
 from rich.style import Style
 from rich.console import Console
 from rich.padding import Padding
-console = Console() #DO NOT DELETE ME
+console = Console() #DO NOT DELETE ME 
 #yes that's reallynecessary
 
 #USE RICH LAYOUT TO SEPARATE BUTTONS/CHOICES????
@@ -19,41 +19,43 @@ def system():
         else: 
             register()
     #prints username + games owned
-    print((login_stats))
-    player_data = get_player_data(login_stats[1])
-    print(player_data)
-    #crud uses wow
-    choice = get_response('Would you like to: \n[blue]1) Delete one of your own games[/blue]\n[green]2) Post a new game[/green]\n3) Update the information for one of your games\n4) View available games\n')
-    #delete
-    if choice == 1:
-        delete_game(login_stats[1])
-    #create
-    elif choice == 2:
-        post_game(login_stats[1])
-    #update
-    elif choice == 3:
-        update_game(login_stats[1])
-    #read
-    elif choice == 4:
-        name = input('What game do you want to see the information for? ')
-        view_game(name)
+    while True:
+        player_data = get_player_data(login_stats[1])
+        #crud uses wow
+        choice = get_response('Would you like to: \n[blue]1) Delete one of your own games[/blue]\n[green]2) Post a new game[/green]\n3) Update the information for one of your games\n4) View available games\n')
+        #delete
+        if choice == 1:
+            delete_game(login_stats[1])
+        #create
+        elif choice == 2:
+            post_game(login_stats[1])
+        #update
+        elif choice == 3:
+            update_game(login_stats[1])
+        #read
+        elif choice == 4:
+            name = input('What game do you want to see the information for? ').title()
+            view_game(name)
+        elif choice == 5:
+            browse()
+        else:
+            print("That is not a option choice!")
 
 #crud functions woah
 def post_game(username): 
-    game = input("What is the game name?: ").capitalize()
-    genre = input("What is the game genre?: ").capitalize()
+    game = input("What is the game name?: ").title()
+    genre = input("What is the game genre?: ").title()
     price = get_response("What is the games price?: ")
     add_game(game, genre, username, price)
-    print(f"made {game}!")
-    
+    print(f"made {game}!")   
 
 def delete_game(username):
-    game = input("What is the game name?: ").capitalize()
-    del_game(game, login_stats[1])
+    game = input("What is the game name?: ").title()
+    del_game(game, username)
     print(f"Deleted {game}!")
 
 def update_game(username):
-    game = get_response("What is the games name you wish to edit?: ")
+    game = get_response("What is the games name you wish to edit?: ").title()
     print("Parts of a game are: game, dev, price, and genre")
     key = get_response("What is the part of the game data you wish to edit?: ")
     data = get_response("What is the new game data?: ")
@@ -61,6 +63,13 @@ def update_game(username):
     
 def view_game(game_name): #username to enable/disable delete and update
     game_data = read_game(game_name)
-    # print(game_data) # this is just the games data idk what else to say about it 
-    print(f"{game_data["game"]} is a {game_data["genre"]} game that is made by {game_data["dev"]} and costs {game_data["price"]}$")
+    if len(game_data) != 4:
+        print("Game was not found!")
+    else:    
+        # print(game_data) # this is just the games data idk what else to say about it 
+        print(f"{game_data["game"]} is a {game_data["genre"]} game that is made by {game_data["dev"]} and costs {game_data["price"]}$")
+#mabye add something to buy games?
+def browse():
+    pass
 system()
+
