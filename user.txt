@@ -1,3 +1,4 @@
 return {"game": gamename, "description" :"this is a game that fuck idk plauys itdelf "}
 kris:Project Zomboid:
 quincyadam:Greengang:
+luchino:

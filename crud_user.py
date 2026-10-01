@@ -55,7 +55,7 @@ def get_player_data(game_name):
                 return game_data
 
 def get_response(text):
-    player_response = input(text)
+    player_response = console.input(text)
     stripped_player_response = player_response.strip()
     nice_player_response = stripped_player_response.lower()
     # makes the response useable 
