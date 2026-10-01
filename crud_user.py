@@ -13,9 +13,9 @@ def is_user_in_user(username):
 #checks Returns if it succeeded or failed (bool)
 def login():
     while True:
-        need_login = get_response("Do you need to login? Y/N: ")
+        need_login = get_response("Do you need to [dodger_blue2]login[/dodger_blue2]? [green]Y[/green]/[red3]N[/red3]: ")
         if need_login:
-            username = get_response("What is your Username?: ")
+            username = get_response("What is your [dodger_blue2]Username[/dodger_blue2]?: ")
             return is_user_in_user(username) , username
         else: # return that it failed to login so we can register later
             print("Failed to find name in db/user didn't need to")
