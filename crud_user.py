@@ -1,3 +1,6 @@
+from rich.console import Console
+console = Console()
+
 # checks if user is in db returns Bool
 def is_user_in_user(username):
     user_data = username + ":"
