@@ -22,7 +22,15 @@ def system():
     while True:
         player_data = get_player_data(login_stats[1])
         #crud uses wow
-        choice = get_response(Padding('Would you like to: \n[blue]1) Delete one of your own games[/blue]\n[green]2) Post a new game[/green]\n[yellow]3) Update the information for one of your games[/yellow]\n[dark_orange3]4) View available games[/dark_orange3]\n[red3]5) Browse Games[/red3]', (0, 1), style = 'on honeydew2', expand = False))
+        choice = get_response(Padding('Would you like to: \n[blue]1) Delete one of your own games[/blue]\n[green]2) Post a new game[/green]\n[yellow]3) Update the information for one of your games[/yellow]\n[dark_orange3]4) View available games[/dark_orange3]\n[red3]5) Browse Games[/red3]', (0, 3), style = 'on yellow3', expand = False))
+        # choice = get_response(Padding('Would you like to: \n[blue]
+        # 1) Delete one of your own games[/blue]\n[green]
+        # 2) Post a new game[/green]\n[yellow]
+        # 3) Update the information for one of your games[/yellow]\n[dark_orange3]
+        # 4) View available games[/dark_orange3]\n[red3]
+        # 5) Browse Games[/red3]', 
+        # (0, 1), style = 'on honeydew2', expand = False))
+        
         #delete
         if choice == 1:
             delete_game(login_stats[1])
